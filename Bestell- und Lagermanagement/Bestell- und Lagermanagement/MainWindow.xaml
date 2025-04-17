@@ -1,0 +1,26 @@
+﻿<Window x:Class="Bestell__und_Lagermanagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Bestell- und Lagermanagement" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" FontStyle="Italic"/>
+        <Button Content="Profil anlegen" Grid.Column="0" Grid.Row="2" x:Name="profil_anlegen" Click="profil_anlegen_Click"/>
+        <Button Content="Passwort ändern" Grid.Column="1" Grid.Row="2" x:Name="passwort_aendern" Click="passwort_aendern_Click"/>
+        <Button Content="Login" Grid.Column="2" Grid.Row="2" x:Name="login" Click="login_Click"/>
+    </Grid>
+</Window>

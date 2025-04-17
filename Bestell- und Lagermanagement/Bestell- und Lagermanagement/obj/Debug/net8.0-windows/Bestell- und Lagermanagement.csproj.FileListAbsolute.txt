@@ -1,0 +1,26 @@
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\bin\Debug\net8.0-windows\Bestell- und Lagermanagement.exe
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\bin\Debug\net8.0-windows\Bestell- und Lagermanagement.deps.json
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\bin\Debug\net8.0-windows\Bestell- und Lagermanagement.runtimeconfig.json
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\bin\Debug\net8.0-windows\Bestell- und Lagermanagement.dll
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\bin\Debug\net8.0-windows\Bestell- und Lagermanagement.pdb
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Login.g.cs
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\MainWindow.g.cs
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Passwort_aendern.g.cs
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Profil_anlegen.g.cs
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\App.g.cs
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement_MarkupCompile.cache
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement_MarkupCompile.lref
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Login.baml
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\MainWindow.baml
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Passwort_aendern.baml
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Profil_anlegen.baml
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.g.resources
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.AssemblyInfoInputs.cache
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.AssemblyInfo.cs
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.csproj.CoreCompileInputs.cache
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.dll
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\refint\Bestell- und Lagermanagement.dll
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.pdb
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\Bestell- und Lagermanagement.genruntimeconfig.cache
+F:\Hausarbeit Dominique Landsberger\Bestell- und Lagermanagement\Bestell- und Lagermanagement\obj\Debug\net8.0-windows\ref\Bestell- und Lagermanagement.dll
