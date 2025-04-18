@@ -2,7 +2,16 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Bestell-_und_Lagermanagement_Auswahlbildschirm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Bestell-_und_Lagermanagement_Auswahlbildschirm_Admin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Mitarbeiter_Ansicht.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Passwort_aendern.xaml.cs">

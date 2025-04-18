@@ -1,0 +1,26 @@
+﻿<Window x:Class="Bestell__und_Lagermanagement.Bestell__und_Lagermanagement_Auswahlbildschirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
+        mc:Ignorable="d"
+        Title="Bestell__und_Lagermanagement_Auswahlbildschirm" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Content="Bestell- und Lagermanagement Auswahlbildschirm" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontStyle="Italic"/>
+        <Button Content="Lieferanten Verwaltung" Grid.Row="2" x:Name="lieferanten" Margin="10 10" Click="lieferanten_Click"/>
+        <Button Content="Bestell Verwaltung" Grid.Row="3" x:Name="bestell" Margin="10 10" Click="bestell_Click"/>
+        <Button Content="Lager Verwalten" Grid.Row="4" x:Name="lager" Margin="10 10" Click="lager_Click"/>
+        <Button Content="Abmelden" Grid.Row="6" x:Name="abmelden" Margin="10 10" Click="abmelden_Click"/>
+    </Grid>
+</Window>
