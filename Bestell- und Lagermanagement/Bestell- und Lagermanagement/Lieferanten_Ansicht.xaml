@@ -1,0 +1,54 @@
+﻿<Window x:Class="Bestell__und_Lagermanagement.Lieferanten_Ansicht"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
+        mc:Ignorable="d"
+        Title="Lieferanten_Ansicht" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="90"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Label Content="Lieferanten Ansicht" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="30" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <DataGrid x:Name="mitarbeiterGrid" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
+          ItemsSource="{Binding}"
+          IsSynchronizedWithCurrentItem="True"
+          AutoGenerateColumns="False"
+          CanUserAddRows="False"
+          IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Lieferantennummer" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Firmen Name" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Firmen Sitz" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Preis" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lieferzeit" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Welche Waren sind verfügbar" Binding="{Binding }"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Lieferantennummer:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lieferantennummer" Text="{Binding lieferantennummer}" Margin="10 10"/>
+        <Label Content="Firmen Name:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="10 10" x:Name="firmen_name" Text="{Binding Firmenname}"/>
+        <Label Content="Welche Waren sind verfügbar sind:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="welche_waren_sind_verfügbar" Margin="10 10" Text="{Binding Waren}"/>
+        <Button Content="Suchen" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" Margin="5 5" x:Name="suche" Click="suche_Click"/>
+        <Button Content="Zurück" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="3" Margin="5 5" x:Name="zurück" Click="zurück_Click"/>
+    </Grid>
+</Window>

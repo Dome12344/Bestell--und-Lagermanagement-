@@ -8,6 +8,18 @@
     <Compile Update="Bestell-_und_Lagermanagement_Auswahlbildschirm_Admin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Lieferanten_Ansicht.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lieferanten_bearbeiten.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lieferanten_hinzufügen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lieferanten_Verwaltung.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
