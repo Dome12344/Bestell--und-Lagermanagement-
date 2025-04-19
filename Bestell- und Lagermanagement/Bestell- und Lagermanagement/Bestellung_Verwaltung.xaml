@@ -1,0 +1,26 @@
+﻿<Window x:Class="Bestell__und_Lagermanagement.Bestellung_Verwaltung"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
+        mc:Ignorable="d"
+        Title="Bestellung_Verwaltung" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Content="Bestellung Verwaltung" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontStyle="Italic"/>
+        <Button Content="Bestellung Ansicht" Grid.Row="2" Margin="10 10" x:Name="bestellung_ansicht" Click="bestellung_ansicht_Click"/>
+        <Button Content="Bestellung bearbeiten" Grid.Row="3" Margin="10 10" x:Name="bestellung_bearbeiten" Click="bestellung_bearbeiten_Click"/>
+        <Button Content="Bestellung Aufgeben/Stornieren" Grid.Row="4" Margin="10 10" x:Name="bestellung_aufgeben_stornieren" Click="bestellung_aufgeben_stornieren_Click"/>
+        <Button Content="Abmelden" Grid.Row="6" Margin="10 10" x:Name="abmelden" Click="abmelden_Click"/>
+    </Grid>
+</Window>

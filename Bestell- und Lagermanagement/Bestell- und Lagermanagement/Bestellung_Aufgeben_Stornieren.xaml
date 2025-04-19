@@ -1,0 +1,52 @@
+﻿<Window x:Class="Bestell__und_Lagermanagement.Bestellung_Aufgeben_Stornieren"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
+        mc:Ignorable="d"
+        Title="Bestellung_Aufgeben_Stornieren" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="90"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Label Content="Bestellung Aufgeben/Stronieren" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" FontSize="30" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Bestellnummer:" Grid.Row="2" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="bestellnummer"/>
+        <Label Content="Bestellung Bezeichnung:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="bestellung_bezeichnung"/>
+        <Label Content="Anzahl:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="anzahl"/>
+        <Label Content="Lieferantennummer:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lieferantennummer"/>
+        <Label Content="Bestelldatum:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="bestelldatum"/>
+        <Label Content="Lagerort:" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lagerort"/>
+        <Label Content="Bestell Status" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="bestell_status"/>
+        <Button Content="Stornieren" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="10" Margin="5 5" x:Name="stornieren" Click="stornieren_Click"/>
+        <Button Content="Hinzufügen" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="11" Margin="5 5" x:Name="hinzufügen" Click="hinzufügen_Click"/>
+        <Button Content="Zurück" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="12" x:Name="zurück" Margin="5 5" Click="zurück_Click"/>
+    </Grid>
+</Window>
