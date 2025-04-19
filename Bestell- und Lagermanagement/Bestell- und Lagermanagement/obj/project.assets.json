@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Hausarbeit Dominique Landsberger\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement.csproj",
+      "projectUniqueName": "F:\\Hausarbeit\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement.csproj",
       "projectName": "Bestell- und Lagermanagement",
-      "projectPath": "F:\\Hausarbeit Dominique Landsberger\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement.csproj",
+      "projectPath": "F:\\Hausarbeit\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement.csproj",
       "packagesPath": "C:\\Users\\dominique\\.nuget\\packages\\",
-      "outputPath": "F:\\Hausarbeit Dominique Landsberger\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement\\obj\\",
+      "outputPath": "F:\\Hausarbeit\\Bestell- und Lagermanagement\\Bestell- und Lagermanagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,71 @@
+﻿<Window x:Class="Bestell__und_Lagermanagement.Lager_bearbeiten"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
+        mc:Ignorable="d"
+        Title="Lager_bearbeiten" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="90"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Label Content="Lager bearbeiten" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="30" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <DataGrid x:Name="LagerGrid" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"
+                  ItemsSource="{Binding}"
+                  IsSynchronizedWithCurrentItem="True"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Lagernummer" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Materialwaren Bezeichnung" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Länge" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Breite" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Höhe" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Anzahl" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Mindes Bestand" Binding="{Binding}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lagerort" Binding="{Binding}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Lagernummer:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lagernummer" Text="{Binding lagernummer}"/>
+        <Label Content="Material/Waren Bezeichnung:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="materail_waren_bezeichnung" Text="{Binding materialwarenbezeichnung}"/>
+        <Label Content="Länge:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="länge" Text="{Binding länge}"/>
+        <Label Content="Breite:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="breite" Text="{Binding breite}"/>
+        <Label Content="Höhe:" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="höhe" Text="{Binding höhe}"/>
+        <Label Content="Anzahl:" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="anzahl" Text="{Binding anzahl}"/>
+        <Label Content="Mindes Bestand:" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="mindes_bestand" Text="{Binding mindesbestand}"/>
+        <Label Content="Lagerort:" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lagerort" Text="{Binding lagerort}"/>
+        <Button Content="Bearbeiten" Grid.Column="1" Grid.Row="12" Grid.ColumnSpan="3" x:Name="bearbeiten" Margin="5 5" Click="bearbeiten_Click"/>
+        <Button Content="Zurück" Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3" Margin="5 5" x:Name="zurück" Click="zurück_Click"/>
+    </Grid>
+</Window>
