@@ -41,12 +41,20 @@ namespace Bestell__und_Lagermanagement
 
         private void mitarbeiter_Click(object sender, RoutedEventArgs e)
         {
-
+            Mitarbeiter_Ansicht mitarbeiter_Ansicht = new Mitarbeiter_Ansicht();
+            this.Close();
+            mitarbeiter_Ansicht.Show();
         }
 
         private void abmelden_Click(object sender, RoutedEventArgs e)
         {
-
+            if (abmelden.IsEnabled = true)
+            {
+                MainWindow mainWindow = new MainWindow();
+                this.Close();
+                mainWindow.Show();
+                
+            }
         }
     }
 }

@@ -41,6 +41,12 @@ namespace Bestell__und_Lagermanagement
 
         private void abmelden_Click(object sender, RoutedEventArgs e)
         {
+            if (abmelden.IsEnabled = true)
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
 
         }
     }

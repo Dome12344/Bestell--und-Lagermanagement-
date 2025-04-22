@@ -26,9 +26,9 @@
         <Label Content="Mitarbeiternummer:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
         <TextBox x:Name="mitarbeiternummer" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Margin="5 5"/>
         <Label Content="Neues Passwort:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3"/>
-        <PasswordBox x:Name="neues_passwort" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Margin="5 5"/>
+        <PasswordBox x:Name="neuespasswort" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Margin="5 5"/>
         <Label Content="Wiederholung des neues Passwort:" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <PasswordBox x:Name="wiederholung_neues_passwort" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Margin="5 5"/>
+        <PasswordBox x:Name="wiederholungneuespasswort" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Margin="5 5"/>
         <Button Content="Passwort ändern" Grid.Column="0" Grid.ColumnSpan="2" Margin="10 10" Grid.Row="6" x:Name="passwort_aendern" Click="passwort_aendern_Click"/>
         <Button Content="Zurück zum Startbildschirm" Grid.Column="2" Grid.Row="6" Margin="10 10" x:Name="zurück" Click="zurück_Click"/>
     </Grid>

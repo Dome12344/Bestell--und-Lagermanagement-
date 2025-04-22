@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Security.Cryptography;
+using System.Data.SqlClient;
 
 namespace Bestell__und_Lagermanagement
 {
@@ -28,9 +30,61 @@ namespace Bestell__und_Lagermanagement
         {
             if (passwort_aendern.IsEnabled == true)
             {
-                MainWindow mainWindow = new MainWindow();
-                this.Close();
-                mainWindow.Show();
+                string verschluesselung = neuespasswort.Password;
+                string hash = PasswordHasher.HashPassword(verschluesselung);
+                
+                string Mitarbeiternummer = "";
+                if (mitarbeiternummer.Text != "")
+                {
+                    try
+                    {
+                        SqlConnection con = new SqlConnection(@"Server=DESKTOP\MYSQLSERVER;Database=BestellundLagermanagement;Integrated Security = True");
+                        con.Open();
+                        string pruefung_mitarbeiternummer = "SELECT Mitarbeiternummer FROM [dbo].[Mitarbeiterprofil] WHERE mitarbeiternummer=@Mitarbeiternummer";
+                        SqlCommand cmd = new SqlCommand(pruefung_mitarbeiternummer, con);
+                        cmd.Parameters.AddWithValue("@Mitarbeiternummer", mitarbeiternummer.Text);
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            Mitarbeiternummer = reader["mitarbeiternummer"].ToString();
+                        }
+                        reader.Close();
+                        con.Close();
+                    }
+                    
+                    catch
+                    {
+                        MessageBox.Show("Es besteht keine Verbindung zur SQL Server");
+                    }
+                    if(mitarbeiternummer.Text == Mitarbeiternummer)
+                    {
+                        if (neuespasswort.Password == wiederholungneuespasswort.Password)
+                        {
+                            try
+                            {
+                                SqlConnection con = new SqlConnection(@"Server=DESKTOP\MYSQLSERVER;Database=BestellundLagermanagement;Integrated Security = True");
+                                con.Open();
+                                SqlCommand cmd = new SqlCommand("Update[dbo].[Mitarbeiterprofil] set Passwort = @Passwort Where mitarbeiternummer = @Mitarbeiternummer", con);
+                                cmd.Parameters.AddWithValue("@Mitarbeiternummer", mitarbeiternummer.Text);
+                                cmd.Parameters.AddWithValue("@Passwort", hash);
+
+
+
+
+                                cmd.ExecuteNonQuery();
+                                con.Close();
+                                mitarbeiternummer.Text = "";
+                                neuespasswort.Password = "";
+                                wiederholungneuespasswort.Password = "";
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Es besteht keine Verbindung zur SQL Server");
+                            }
+
+                        }
+                    }
+                }
             }
         }
 
