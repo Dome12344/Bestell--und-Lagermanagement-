@@ -28,7 +28,7 @@ CREATE TABLE Mitarbeiterprofil (
   Benutzername NVARCHAR(100),
   Passwort Nvarchar(500),
   Vorname Nvarchar(100),
-  Nachanem Nvarchar(100),
+  Nachname Nvarchar(100),
   E_Mail Nvarchar(100),
   Telefon Nvarchar(100),
   Diensthandy Nvarchar(100)
@@ -80,9 +80,9 @@ CREATE TABLE Verzeichnis(
 	--REFERENCES Mitarbeiterprofil(Mitarbeiternummer)
 	);
 
-	INSERT INTO [dbo].Mitarbeiterprofil (Mitarbeiternummer ,Benutzername,Passwort,Vorname,Nachanem,E_Mail,Telefon,Diensthandy) VALUES  (000500, 'Markus','799b095aecdfc406bc71976b144e0a868ef5b72c5bc15c2baf746010841941de','Markus','Hausberger','markus.hausberg@fmail.de','647857995','06812587158563');
-	INSERT INTO [dbo].Mitarbeiterprofil (Mitarbeiternummer ,Benutzername,Passwort,Vorname,Nachanem,E_Mail,Telefon,Diensthandy) VALUES  (000501, 'Lukas','fdb139ef4ccf4940ddd9048f69f7eea4b59c5bf39f689048bd00a3cfbe518baf','Lukas','Landhaus','lukas.landahus@fmail.de','647478532','06812587148974');
-	INSERT INTO [dbo].Mitarbeiterprofil (Mitarbeiternummer ,Benutzername,Passwort,Vorname,Nachanem,E_Mail,Telefon,Diensthandy) VALUES  (100501, 'Tim','d1e60a586ff98a74bd52af6609ce11d832dad4823a6844de053a7d20ed44bfcc','Tim','Bergbach','tim.bergbach@fmail.de','64789783','06812587163247');
+	INSERT INTO [dbo].Mitarbeiterprofil (Mitarbeiternummer ,Benutzername,Passwort,Vorname,Nachname,E_Mail,Telefon,Diensthandy) VALUES  (000500, 'Markus','799b095aecdfc406bc71976b144e0a868ef5b72c5bc15c2baf746010841941de','Markus','Hausberger','markus.hausberg@fmail.de','647857995','06812587158563');
+	INSERT INTO [dbo].Mitarbeiterprofil (Mitarbeiternummer ,Benutzername,Passwort,Vorname,Nachname,E_Mail,Telefon,Diensthandy) VALUES  (000501, 'Lukas','fdb139ef4ccf4940ddd9048f69f7eea4b59c5bf39f689048bd00a3cfbe518baf','Lukas','Landhaus','lukas.landahus@fmail.de','647478532','06812587148974');
+	INSERT INTO [dbo].Mitarbeiterprofil (Mitarbeiternummer ,Benutzername,Passwort,Vorname,Nachname,E_Mail,Telefon,Diensthandy) VALUES  (100501, 'Tim','d1e60a586ff98a74bd52af6609ce11d832dad4823a6844de053a7d20ed44bfcc','Tim','Bergbach','tim.bergbach@fmail.de','64789783','06812587163247');
 
 	INSERT INTO [dbo].Lieferanten (Lieferantennummer ,FrimenName,FirmenSitze,Preis,Lieferzeit,WelcheWarensindverfuegbar,Mitarbeiternummer) VALUES  (111111, 'Stahltr‰gerGmbh','Bachberg 10','15.5','5 Tage','Stahltr‰ger','100501');
 	INSERT INTO [dbo].Lieferanten (Lieferantennummer ,FrimenName,FirmenSitze,Preis,Lieferzeit,WelcheWarensindverfuegbar,Mitarbeiternummer) VALUES  (111112, 'StahlroheGmbh','Westpreuﬂen 10','20.5','7 Tage','Stahlrohe','100501');
