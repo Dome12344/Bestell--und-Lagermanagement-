@@ -38,24 +38,24 @@
                   CanUserAddRows="False"
                   IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Lieferantennummer" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Firmen Name" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Firmen Sitz" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Preis" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Lieferzeit" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Welche Waren sind verfügbar" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lieferantennummer" Binding="{Binding Lieferantennummer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Firmen Name" Binding="{Binding FrimenName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Firmen Sitz" Binding="{Binding FirmenSitze}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Preis" Binding="{Binding Preis}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lieferzeit" Binding="{Binding Lieferzeit}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Welche Waren sind verfügbar" Binding="{Binding WelcheWarensindverfuegbar}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Lieferantennummer:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lieferantennummer" Text="{Binding lieferantennummer}" Margin="5 5"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lieferantennummer" Text="{Binding Lieferantennummer}" Margin="5 5"/>
         <Label Content="Firmen Name:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="firmen_name" Text="{Binding Firmenname}"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="firmen_name" Text="{Binding FrimenName}"/>
         <Label Content="Welche Waren sind verfügbar sind:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="welche_waren_sind_verfügbar" Margin="5 5" Text="{Binding Waren}"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="welche_waren_sind_verfügbar" Margin="5 5" Text="{Binding WelcheWarensindverfuegbar}"/>
         <Label Content="Firmen Sitz:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="firmen_sitz" Text="{Binding firmensitz}"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="firmen_sitz" Text="{Binding FirmenSitze}"/>
         <Label Content="Preis:" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="preis" Text="{Binding preis}"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="preis" Text="{Binding Preis}"/>
         <Label Content="Lieferzeit:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="8"/>
         <TextBox Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lieferzeit" Text="{Binding Lieferzeit}"/>
         <Button Content="Bearbeiten" Grid.Column="1" Grid.Row="10" Grid.ColumnSpan="3" Margin="5 5" x:Name="bearbeiten" Click="bearbeiten_Click"/>

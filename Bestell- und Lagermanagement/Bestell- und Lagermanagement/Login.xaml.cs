@@ -25,7 +25,15 @@ namespace Bestell__und_Lagermanagement
         {
             InitializeComponent();
         }
+        public class mitarbeiternummern
+        {
+            public string Mitarbeiternummern { get; set; }
 
+            public mitarbeiternummern(string mitarbeiternummern)
+            {
+                Mitarbeiternummern = mitarbeiternummern;
+            }
+        }
 
 
         private void zurück_Click(object sender, RoutedEventArgs e)
@@ -45,6 +53,7 @@ namespace Bestell__und_Lagermanagement
                 string verschluesselung = passwort.Password;
                 string hash = PasswordHasher.HashPassword(verschluesselung);
                 int nummere = Convert.ToInt32(mitarbeiternummer.Text);
+                string Mitarbeiternummern = mitarbeiternummer.Text;
                 if (nummere <= 500)
                 {
                     try
@@ -64,7 +73,7 @@ namespace Bestell__und_Lagermanagement
                         passwort.Password = "";
                         if (count > 0)
                         {
-                            Bestell__und_Lagermanagement_Auswahlbildschirm_Admin Auswahl_Admin = new Bestell__und_Lagermanagement_Auswahlbildschirm_Admin();
+                            Bestell__und_Lagermanagement_Auswahlbildschirm_Admin Auswahl_Admin = new Bestell__und_Lagermanagement_Auswahlbildschirm_Admin(new mitarbeiternummern(Mitarbeiternummern));
                             this.Close();
                             Auswahl_Admin.Show();
                         }
@@ -98,7 +107,7 @@ namespace Bestell__und_Lagermanagement
                         passwort.Password = "";
                         if (count > 0)
                         {
-                            Bestell__und_Lagermanagement_Auswahlbildschirm Auswahl_Mitarbeiter = new Bestell__und_Lagermanagement_Auswahlbildschirm();
+                            Bestell__und_Lagermanagement_Auswahlbildschirm Auswahl_Mitarbeiter = new Bestell__und_Lagermanagement_Auswahlbildschirm(new mitarbeiternummern(Mitarbeiternummern));
                             this.Close();
                             Auswahl_Mitarbeiter.Show();
                         }

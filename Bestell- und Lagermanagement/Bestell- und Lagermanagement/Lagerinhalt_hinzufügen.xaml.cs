@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static Bestell__und_Lagermanagement.Login;
 
 namespace Bestell__und_Lagermanagement
 {
@@ -19,9 +20,11 @@ namespace Bestell__und_Lagermanagement
     /// </summary>
     public partial class Lagerinhalt_hinzufügen : Window
     {
+       
         public Lagerinhalt_hinzufügen()
         {
             InitializeComponent();
+            
         }
 
         private void hinzufügen_Click(object sender, RoutedEventArgs e)

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static Bestell__und_Lagermanagement.Login;
 
 namespace Bestell__und_Lagermanagement
 {
@@ -19,14 +20,23 @@ namespace Bestell__und_Lagermanagement
     /// </summary>
     public partial class Bestell__und_Lagermanagement_Auswahlbildschirm_Admin : Window
     {
-        public Bestell__und_Lagermanagement_Auswahlbildschirm_Admin()
+        private mitarbeiternummern Mitarbeiternummern;
+        public Bestell__und_Lagermanagement_Auswahlbildschirm_Admin(mitarbeiternummern Mitarbeiternummern)
         {
             InitializeComponent();
+            this.Mitarbeiternummern = Mitarbeiternummern;
+            
         }
 
         private void lieferanten_Click(object sender, RoutedEventArgs e)
         {
-
+            string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
+            if (lieferanten.IsEnabled == true)
+            {
+                Lieferanten_Verwaltung lieferanten_Verwaltung = new Lieferanten_Verwaltung(new mitarbeiternummern(mitarbeiternummer));
+                this.Close();
+                lieferanten_Verwaltung.Show();
+            }
         }
 
         private void bestell_Click(object sender, RoutedEventArgs e)

@@ -27,7 +27,7 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <Label Content="Lagerinhalt Ansicht" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="30" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <DataGrid x:Name="LagerGrid" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"
+        <DataGrid  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"
           ItemsSource="{Binding}"
           IsSynchronizedWithCurrentItem="True"
           AutoGenerateColumns="False"

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Bestell__und_Lagermanagement.model;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,19 +22,30 @@ namespace Bestell__und_Lagermanagement
     /// </summary>
     public partial class Lieferanten_bearbeiten : Window
     {
+        private BestellundLagermanagementContext context = new BestellundLagermanagementContext();
+        private ICollectionView collectionView;
         public Lieferanten_bearbeiten()
         {
             InitializeComponent();
+            context.Lieferanten.Load();
+            collectionView = CollectionViewSource.GetDefaultView(context.Lieferanten.Local.ToObservableCollection());
+            DataContext = collectionView;
         }
 
         private void bearbeiten_Click(object sender, RoutedEventArgs e)
         {
-
+            if (bearbeiten.IsEnabled = true)
+            {
+               context.SaveChanges();
+            }
         }
 
         private void zurück_Click(object sender, RoutedEventArgs e)
         {
-
+            if (zurück.IsEnabled = true)
+            {
+                this.Close();
+            }
         }
     }
 }

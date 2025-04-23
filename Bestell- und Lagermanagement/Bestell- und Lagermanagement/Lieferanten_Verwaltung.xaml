@@ -21,6 +21,6 @@
         <Button Content="Lieferanten Ansicht" Grid.Row="2" Margin="10 10" x:Name="lieferanten_ansicht" Click="lieferanten_ansicht_Click"/>
         <Button Content="Lieferanten bearbeiten" Grid.Row="3" Margin="10 10" x:Name="lieferanten_bearbeiten" Click="lieferanten_bearbeiten_Click"/>
         <Button Content="Lieferanten hinzufügen" Grid.Row="4" Margin="10 10" x:Name="lieferanten_hinzufügen" Click="lieferanten_hinzufügen_Click"/>
-        <Button Content="Abmelden" Grid.Row="6" Margin="10 10" x:Name="abmelden" Click="abmelden_Click"/>
+        <Button Content="Zurück" Grid.Row="6" Margin="10 10" x:Name="zurück" Click="zurück_Click"/>
     </Grid>
 </Window>

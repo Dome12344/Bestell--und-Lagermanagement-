@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Bestell__und_Lagermanagement.model;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +22,11 @@ namespace Bestell__und_Lagermanagement
     /// </summary>
     public partial class Lagerinhalt_Ansicht : Window
     {
+        
         public Lagerinhalt_Ansicht()
         {
             InitializeComponent();
+            
         }
 
         private void suche_Click(object sender, RoutedEventArgs e)
