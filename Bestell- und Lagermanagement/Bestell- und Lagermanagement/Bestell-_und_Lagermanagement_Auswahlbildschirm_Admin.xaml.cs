@@ -41,7 +41,13 @@ namespace Bestell__und_Lagermanagement
 
         private void bestell_Click(object sender, RoutedEventArgs e)
         {
-
+            string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
+            if(bestell.IsEnabled == true)
+            {
+                Bestellung_Verwaltung bestellung_Verwaltung = new Bestellung_Verwaltung(new mitarbeiternummern(mitarbeiternummer));
+                this.Close();
+                bestellung_Verwaltung.Show();
+            }
         }
 
         private void lager_Click(object sender, RoutedEventArgs e)

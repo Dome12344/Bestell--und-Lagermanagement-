@@ -39,7 +39,7 @@ namespace Bestell__und_Lagermanagement
             string searchStr2 = firmen_name.Text.ToLower();
             string searchStr3 = welche_waren_sind_verfügbar.Text.ToLower();
 
-            // CollectionView abrufen
+            
             var view = CollectionViewSource.GetDefaultView(lieferantenGrid.ItemsSource);
 
             if (view == null) return; 

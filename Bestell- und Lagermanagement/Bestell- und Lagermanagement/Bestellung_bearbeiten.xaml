@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
         mc:Ignorable="d"
-        Title="Bestellung_bearbeiten" Height="450" Width="800">
+        Title="Bestellung_bearbeiten" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="90"/>
@@ -37,30 +37,30 @@
           CanUserAddRows="False"
           IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Bestellnummer" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Bestellungsbezeichnung" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Anzahl" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Lieferantennummer" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Bestelldatum" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Lagerort" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Bestell Status" Binding="{Binding}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Bestellnummer" Binding="{Binding Bestellnummer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Bestellungsbezeichnung" Binding="{Binding BestellungBezeichung}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Anzahl" Binding="{Binding Anzahl}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lieferantennummer" Binding="{Binding Lieferantennummer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Bestelldatum" Binding="{Binding Bestelldatum}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lagerort" Binding="{Binding Lagerort}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Bestell Status" Binding="{Binding BestellStatus}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Bestellung bearbeiten" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontStyle="Italic"/>
         <Label Content="Bestellnummer:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="bestellnummer" Text="{Binding bestellnummer}" Margin="5 5"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="bestellnummer" Text="{Binding Bestellnummer}" Margin="5 5"/>
         <Label Content="Bestell Bezeichnung:" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox x:Name="bestell_bezeichnung" Text="{Binding bestellungbezeichnung}" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" Grid.Row="4"/>
+        <TextBox x:Name="bestell_bezeichnung" Text="{Binding BestellungBezeichung}" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" Grid.Row="4"/>
         <Label Content="Anzahl:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="anzahl" Text="{Binding anzahl}"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="anzahl" Text="{Binding Anzahl}"/>
         <Label Content="Lieferantennummer:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lieferantenummer" Text="{Binding Lieferantennummer}"/>
         <Label Content="Bestelldatum:" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="bestelldatum" Text="{Binding bestelldatum}"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="bestelldatum" Text="{Binding Bestelldatum}"/>
         <Label Content="Lagerort:" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lagerort" Margin="5 5" Text="{Binding Lagerort}"/>
         <Label Content="Bestell Status:" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" x:Name="bestell_status" Text="{Binding bestellstatus}" Margin="5 5"/>
+        <TextBox Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" x:Name="bestell_status" Text="{Binding BestellStatus}" Margin="5 5"/>
         <Button Content="Bearbeiten" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="3" x:Name="bearbeiten" Click="bearbeiten_Click" Margin="5 5"/>
         <Button Content="Zurück" Grid.Column="1" Grid.Row="12" Grid.ColumnSpan="3" Margin="5 5" x:Name="zurück" Click="zurück_Click"/>
     </Grid>

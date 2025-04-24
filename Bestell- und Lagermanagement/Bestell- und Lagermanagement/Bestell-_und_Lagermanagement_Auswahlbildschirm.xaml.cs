@@ -31,7 +31,7 @@ namespace Bestell__und_Lagermanagement
         {
             string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
             int nummer = Convert.ToInt32(mitarbeiternummer);
-            if (nummer >= 500 && nummer <= 100499)
+            if (nummer >= 100500)
             {
                 if (lieferanten.IsEnabled == true)
                 {
@@ -48,7 +48,21 @@ namespace Bestell__und_Lagermanagement
 
         private void bestell_Click(object sender, RoutedEventArgs e)
         {
-
+            string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
+            int nummer = Convert.ToInt32(mitarbeiternummer);
+            if (nummer >= 100500)
+            {
+                if (bestell.IsEnabled == true)
+                {
+                    Bestellung_Verwaltung bestellung_Verwaltung = new Bestellung_Verwaltung(new mitarbeiternummern(mitarbeiternummer));
+                    this. Close();
+                    bestellung_Verwaltung.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sie sind kein Mitarbeiter dieser Abteilung");
+            }
         }
 
         private void lager_Click(object sender, RoutedEventArgs e)
