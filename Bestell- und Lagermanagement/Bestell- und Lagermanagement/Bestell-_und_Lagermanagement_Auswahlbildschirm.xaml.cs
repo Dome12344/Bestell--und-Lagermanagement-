@@ -31,7 +31,7 @@ namespace Bestell__und_Lagermanagement
         {
             string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
             int nummer = Convert.ToInt32(mitarbeiternummer);
-            if (nummer >= 100500)
+            if (nummer >= 100501)
             {
                 if (lieferanten.IsEnabled == true)
                 {
@@ -69,7 +69,7 @@ namespace Bestell__und_Lagermanagement
         {
             string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
             int nummer = Convert.ToInt32(mitarbeiternummer);
-            if (nummer > 500 && nummer < 100500)
+            if (nummer >= 501 && nummer <= 100500)
             {
                 if (lager.IsEnabled == true)
                 {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
         mc:Ignorable="d"
-        Title="Mitarbeiter_Ansicht" Height="450" Width="800">
+        Title="Mitarbeiter_Ansicht" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -32,14 +32,14 @@
                   CanUserAddRows="False"
                   IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Benutzername" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Passwort" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Vorname" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Nachname" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Mitarbeiternummer" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="E-Mail" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Telefonnummer" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Diensthandynummer" Binding="{Binding }"></DataGridTextColumn>
+                <DataGridTextColumn Header="Benutzername" Binding="{Binding Benutzername}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Passwort" Binding="{Binding Passwort}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nachname" Binding="{Binding Nachname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Mitarbeiternummer" Binding="{Binding Mitarbeiternummer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="E-Mail" Binding="{Binding EMail}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Telefonnummer" Binding="{Binding Telefon}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Diensthandynummer" Binding="{Binding Diensthandy}"></DataGridTextColumn>
                 
             </DataGrid.Columns>
             

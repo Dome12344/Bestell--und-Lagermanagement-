@@ -63,9 +63,13 @@ namespace Bestell__und_Lagermanagement
 
         private void mitarbeiter_Click(object sender, RoutedEventArgs e)
         {
-            Mitarbeiter_Ansicht mitarbeiter_Ansicht = new Mitarbeiter_Ansicht();
-            this.Close();
-            mitarbeiter_Ansicht.Show();
+            string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
+            if (mitarbeiter.IsEnabled == true)
+            {
+                Mitarbeiter_Ansicht mitarbeiter_Ansicht = new Mitarbeiter_Ansicht(new mitarbeiternummern(mitarbeiternummer));
+                this.Close();
+                mitarbeiter_Ansicht.Show();
+            }
         }
 
         private void abmelden_Click(object sender, RoutedEventArgs e)
