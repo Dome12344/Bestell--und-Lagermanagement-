@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
         mc:Ignorable="d"
-        Title="Lagerinhalt_Ansicht" Height="450" Width="800">
+        Title="Lagerinhalt_Ansicht" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="90"/>
@@ -27,29 +27,29 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <Label Content="Lagerinhalt Ansicht" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" FontSize="30" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <DataGrid  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"
+        <DataGrid x:Name="LagerGrid" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"
           ItemsSource="{Binding}"
           IsSynchronizedWithCurrentItem="True"
           AutoGenerateColumns="False"
           CanUserAddRows="False"
           IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Lagernummer" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Materialwaren Bezeichnung" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Länge" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Breite" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Höhe" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Anzahl" Binding="{Binding }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Mindes Bestand" Binding="{Binding}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Lagerort" Binding="{Binding}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lagernummer" Binding="{Binding Lagernummer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Materialwaren Bezeichnung" Binding="{Binding MaterialWarenbezeichnung}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Länge" Binding="{Binding Laenge}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Breite" Binding="{Binding Breite}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Höhe" Binding="{Binding Hoehe}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Anzahl" Binding="{Binding Anzahl}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Mindes Bestand" Binding="{Binding Mindesbestand}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Lagerort" Binding="{Binding Lagerort}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Lagernummer:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lagernummer" Text="{Binding lagernummer}" Margin="10 10"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lagernummer"  Margin="10 10"/>
         <Label Content="Material/Waren Bezeichnung:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="10 10" x:Name="material_waren_bezeichnung" Text="{Binding materialwarenbezeichnung}"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="10 10" x:Name="material_waren_bezeichnung"/>
         <Label Content="Lagerort:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lagerort" Margin="10 10" Text="{Binding Lagerort}"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lagerort" Margin="10 10" />
         <Button Content="Suchen" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="7" x:Name="suche" Margin="5 5" Click="suche_Click"/>
         <Button Content="Zurück" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="8" Margin="5 5" x:Name="zurück" Click="zurück_Click"/>
     </Grid>

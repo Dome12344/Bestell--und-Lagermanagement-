@@ -20,7 +20,7 @@
         <Label Content="Lager Verwaltung" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontStyle="Italic"/>
         <Button Content="Lagerinhalt Ansicht" Grid.Row="2" Margin="10 10" x:Name="lagerinahlt_ansicht" Click="lagerinahlt_ansicht_Click"/>
         <Button Content="Lager bearbeiten" Grid.Row="3" Margin="10 10" x:Name="lager_bearbeiten" Click="lager_bearbeiten_Click"/>
-        <Button Content="Lagerinhalt hinzufügen" Grid.Row="4" Margin="10 10" x:Name="lagerinhalt_hinzufügen"/>
+        <Button Content="Lagerinhalt hinzufügen" Grid.Row="4" Margin="10 10" x:Name="lagerinhalt_hinzufügen" Click="lagerinhalt_hinzufügen_Click"/>
         <Button Content="Abmelden" Grid.Row="6" Margin="10 10" x:Name="abmelden" Click="abmelden_Click"/>
     </Grid>
 </Window>

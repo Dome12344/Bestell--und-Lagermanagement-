@@ -74,9 +74,12 @@ namespace Bestell__und_Lagermanagement
             }
             else
             {
-                Bestell__und_Lagermanagement_Auswahlbildschirm bestell__Und_Lagermanagement_Auswahlbildschirm = new Bestell__und_Lagermanagement_Auswahlbildschirm(new mitarbeiternummern(mitarbeiternummer));
-                this.Close();
-                bestell__Und_Lagermanagement_Auswahlbildschirm.Show();
+                if (zurück.IsEnabled == true)
+                {
+                    Bestell__und_Lagermanagement_Auswahlbildschirm bestell__Und_Lagermanagement_Auswahlbildschirm = new Bestell__und_Lagermanagement_Auswahlbildschirm(new mitarbeiternummern(mitarbeiternummer));
+                    this.Close();
+                    bestell__Und_Lagermanagement_Auswahlbildschirm.Show();
+                }
 
             }
         }

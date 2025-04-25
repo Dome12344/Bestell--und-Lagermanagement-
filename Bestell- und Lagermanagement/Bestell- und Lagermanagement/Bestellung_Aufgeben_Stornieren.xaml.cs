@@ -158,7 +158,7 @@ namespace Bestell__und_Lagermanagement
                     }
                     else
                     {
-                        MessageBox.Show("Bitte eine Lieferantennummer angeben die nicht Vergeben ist!");
+                        MessageBox.Show("Bitte eine Bestellnummer angeben die nicht Vergeben ist!");
                     }
                 }
             }

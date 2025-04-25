@@ -52,7 +52,13 @@ namespace Bestell__und_Lagermanagement
 
         private void lager_Click(object sender, RoutedEventArgs e)
         {
-
+            string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
+            if (lager.IsEnabled == true)
+            {
+                Lager_Verwaltung lager_Verwaltung = new Lager_Verwaltung(new mitarbeiternummern(mitarbeiternummer));
+                this.Close();
+                lager_Verwaltung.Show();
+            }
         }
 
         private void mitarbeiter_Click(object sender, RoutedEventArgs e)

@@ -67,6 +67,21 @@ namespace Bestell__und_Lagermanagement
 
         private void lager_Click(object sender, RoutedEventArgs e)
         {
+            string mitarbeiternummer = Mitarbeiternummern.Mitarbeiternummern;
+            int nummer = Convert.ToInt32(mitarbeiternummer);
+            if (nummer > 500 && nummer < 100500)
+            {
+                if (lager.IsEnabled == true)
+                {
+                    Lager_Verwaltung lager_Verwaltung = new Lager_Verwaltung(new mitarbeiternummern(mitarbeiternummer));
+                    this. Close();
+                    lager_Verwaltung.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sie sind kein Mitarbeiter dieser Abteilung");
+            }
 
         }
 

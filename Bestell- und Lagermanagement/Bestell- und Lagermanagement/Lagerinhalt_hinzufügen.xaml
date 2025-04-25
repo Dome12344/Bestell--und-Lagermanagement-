@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bestell__und_Lagermanagement"
         mc:Ignorable="d"
-        Title="Lagerinhalt_hinzufügen" Height="450" Width="800">
+        Title="Lagerinhalt_hinzufügen" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="90"/>
@@ -34,13 +34,13 @@
         <Label Content="Lagernummer:" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="lagernummer"/>
         <Label Content="Material/Waren Bezeichnung:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="material_waren_bezeichnung"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="materialwarenbezeichnung"/>
         <Label Content="Länge:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="länge"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="laenge"/>
         <Label Content="Breite:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="breite"/>
         <Label Content="Höhe:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="höhe"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="hoehe"/>
         <Label Content="Anzahl:" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="5 5" x:Name="anzahl"/>
         <Label Content="Mindes Bestand:" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
