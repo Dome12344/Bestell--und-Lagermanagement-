@@ -1,0 +1,150 @@
+Testprotokoll
+8.1 Profil Anlegen
+Test Protokoll Profil Anlegen 
+Durchgeführter Test:		Profil Anlegen
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch ein Profil mit gleicher Mitarbeitern Nummer anzulegen kam eine Fehlermeldung, dass die Mitarbeiternummer vergeben ist und man eine andere angeben soll.
+Beim 2 Versuch mit richtigen Eingaben wurde das Profil angelegt.
+Testergebnis: Die Fehlermeldung kommt bei vergebenden Mitarbeiternummer und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Profil Anlegen wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+
+
+
+
+
+
+8.2 Passwort ändern
+Test Protokoll Passwort ändern
+Durchgeführter Test:		Passwort ändern
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch das Passwort zu ändern mit Falschen Mitarbeiternummer kam eine Fehlermeldung, dass die Mitarbeiternummer Falschen ist und es nochmal versuchen soll.
+Beim 2 Versuch mit richtigen Eingaben wurde das Passwort geändert.
+Testergebnis: Die Fehlermeldung kommt bei falscher Eingabe des Mitarbeiternummer und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Passwort Änderung wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+
+
+
+
+
+
+
+
+8.3 Login
+Test Protokoll Login mit Passwort 
+Durchgeführter Test:		Login Test
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch sich einzuloggen mit Falschen Namen, Mitarbeiternummer oder Passwort kam eine Fehlermeldung, dass der Benutzername, Mitarbeiternummer oder Passwort Falschen ist und es nochmal versuchen soll.
+Beim 2 Versuch mit richtigen Eingaben wurde ich zur Auswahlbildschirm weiter geleitet ohne Probleme.
+Testergebnis: Die Fehlermeldung kommt bei falscher Eingabe des Benutzername, Mitarbeiternummer oder Passwort und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Login wird man weiter an die Auswahlbildschirm weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+
+
+
+
+8.4 Benutzer Oberfläche Navigieren 
+Test Protokoll Benutzer Oberfläche Navigieren
+Durchgeführter Test:		Benutzer Oberfläche Navigieren
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch sich von Oberfläche zu Oberfläche kamen keine Fehler.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+8.5 Lieferanten Hinzufügen
+Test Protokoll Lieferanten Hinzufügen 
+Durchgeführter Test:		Lieferanten Hinzufügen
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch einen Lieferanten mit gleicher Lieferantennummer anzulegen kam eine Fehlermeldung, dass die Lieferantennummer vergeben ist und man eine andere angeben soll.
+Beim 2 Versuch mit richtigen Eingaben wurde der Lieferanten angelegt.
+Testergebnis: Die Fehlermeldung kommt bei vergebenden Lieferantennummer und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Lieferanten Anlegen wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms
+8.6 Lieferanten Bearbeiten
+Test Protokoll Lieferanten Bearbeiten
+Durchgeführter Test:		Lieferanten Bearbeiten
+Datum:						08.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch den Lieferanten zu bearbeiten kam keine eine Fehlermeldung.
+Testergebnis: Es kommt keine Fehlermeldung, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Lieferanten Bearbeitung wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+
+8.7 Bestellung Aufgeben
+Test Protokoll Bestellung Aufgeben 
+Durchgeführter Test:		Bestellung Aufgeben
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch ein Profil mit gleicher Bestellungsnummer anzulegen kam eine Fehlermeldung, dass die Bestellungsnummer vergeben ist und man eine andere angeben soll.
+Beim 2 Versuch mit richtigen Eingaben wurde die Bestellung angelegt.
+Testergebnis: Die Fehlermeldung kommt bei vergebenden Bestellungsnummer und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Bestellung Anlegen wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms
+8.8 Bestellung Stornieren
+Test Protokoll Bestellung Stornieren 
+Durchgeführter Test:		Bestellung Stornieren
+Datum:						09.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch eine Bestellung mit nicht vorhanden Bestellungsnummer zu stornieren kam eine Fehlermeldung, dass die Bestellungsnummer nicht vergeben ist und man eine vorhandene verwenden soll.
+Beim 2 Versuch mit richtigen Eingaben wurde die Bestellung storniert.
+Testergebnis: Die Fehlermeldung kommt nur bei einer nicht vergebenden Bestellungsnummer und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Lieferanten Anlegen wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms
+8.9 Lagerinhalt hinzufügen
+Test Protokoll Lagerinhalt hinzufügen 
+Durchgeführter Test:		Lagerinhalt hinzufügen
+Datum:						09.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch ein Lagerinhalt mit gleicher Lagernummer anzulegen kam eine Fehlermeldung, dass die Lagernummer vergeben ist und man eine andere angeben soll.
+Beim 2 Versuch mit richtigen Eingaben wurde der Lagerinhalt angelegt.
+Testergebnis: Die Fehlermeldung kommt bei vergebenden Lagernummer und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Bestellung Anlegen wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms
+
+8.10 Bestandsbenachrichtigung bei Unterschreiten des Mindestbestands
+Test Protokoll Bestandsbenachrichtigung bei Unterschreiten des Mindestbestands
+Durchgeführter Test:		Bestandsbenachrichtigung bei Unterschreiten des Mindestbestands
+Datum:						09.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch den Bestand unter den Mindestbestand zu ändern kommt eine Meldung, dass man das Material/Ware bestellen soll und es wird gespeichert. 
+Testergebnis: Es kommt die Meldung und anhand dieser Meldung wird verhindert, dass das Programm abstützen.
+Des Weiteren bei erfolgreicher Bearbeitung des Lagerinhalt wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+8.11 Manuelle Aktualisierung bei Wareneingang
+Testprotokoll Manuelle Aktualisierung bei Wareneingang
+Durchgeführter Test:		Manuelle Aktualisierung bei Wareneingang
+Datum:						10.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch den Bestand zu aktualisieren kommt keine eine Meldung, dass man das Material/Ware bestellen soll und es wird gespeichert wie sein sollte. 
+Testergebnis: Es kommt keine die Meldung für eine Bestellung und das Programm stürzt nicht ab.
+Des Weiteren bei erfolgreicher Manuelle Aktualisierung bei Wareneingang wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+
+
+
+
+
+
+8.12 Login nach Passwort Änderung
+Test Protokoll Login mit Passwort Änderung
+Durchgeführter Test:		Login mit Passwort Änderung
+Datum:						06.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch sich einzuloggen mit Falschen Namen oder Passwort kam eine Fehlermeldung, dass der Benutzername, Mitarbeiternummer oder Passwort Falschen ist und es nochmal versuchen soll.
+Beim 2 Versuch mit richtigen Eingaben wurde ich zur Auswahlbildschirm weiter geleitet ohne Probleme.
+Testergebnis: Die Fehlermeldung kommt bei falscher Eingabe des Benutzername, Mitarbeiternummer oder Passwort nach Änderung und lässt, dass Programm nicht abstützen.
+Des Weiteren bei erfolgreichem Login wird man weiter an die Auswahlbildschirm weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
+8.13 Lagerinhalt Ansicht
+Testprotokoll Lagerinhalt Ansicht
+Durchgeführter Test:		Lagerinhalt Ansicht
+Datum:						10.05.2025
+Tester:						Dominique Landsberger
+Beobachtetes Resultat: Beim Versuch die Lagerinhalt Ansicht anzeigen zu lassen kamen keine Fehler. 
+Testergebnis: Es kommt keine die Meldung für eine Fehler bei Erstellen der Lager Ansicht und das Programm stürzt nicht ab.
+Des Weiteren bei erfolgreicher Lagerinhalt Ansicht auf ruf wird man nicht weitergeleitet.
+Ergebnis des Testes keine Probleme mit diesem Teil des Programms.
